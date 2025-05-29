@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--color-background-alt);
   padding: var(--space-6) 0;
-  margin-top: var(--space-16);
+  margin-top: 120px;
   border-top: 1px solid var(--color-border);
 }
 

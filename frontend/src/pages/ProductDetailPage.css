@@ -161,9 +161,9 @@
 }
 
 .product-actions {
+  
   display: flex;
-  /* border: 1px solid red; */
-  /* flex-direction: column; */
+  justify-content: end;
   gap: var(--space-3);
 }
 

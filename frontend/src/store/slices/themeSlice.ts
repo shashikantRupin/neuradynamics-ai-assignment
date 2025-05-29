@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ThemeState } from '../../types';
 
-// Function to get the initial theme based on user preference or system
 const getInitialTheme = (): 'light' | 'dark' => {
   try {
     const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
@@ -9,7 +8,6 @@ const getInitialTheme = (): 'light' | 'dark' => {
       return storedTheme;
     }
     
-    // Check for system preference
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
     }
@@ -25,13 +23,11 @@ const initialState: ThemeState = {
   mode: getInitialTheme(),
 };
 
-// Apply theme to document
 const applyTheme = (theme: 'light' | 'dark') => {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
 };
 
-// Apply initial theme
 applyTheme(initialState.mode);
 
 const themeSlice = createSlice({

@@ -41,7 +41,6 @@ const ProductDetailPage: React.FC = () => {
     }
   };
   
-  // Loading state
   if (status === 'loading' || !product) {
     return (
       <div className="container">
@@ -63,7 +62,6 @@ const ProductDetailPage: React.FC = () => {
     );
   }
   
-  // Error state - product not found
   if (!product) {
     return (
       <div className="container">
@@ -79,7 +77,6 @@ const ProductDetailPage: React.FC = () => {
     );
   }
   
-  // Format price to have 2 decimal places
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -136,10 +133,7 @@ const ProductDetailPage: React.FC = () => {
           </div>
           
           <div className="product-actions">
-            <button className="add-to-cart-button">
-              <ShoppingCart size={20} />
-              <span>Add to Cart</span>
-            </button>
+
             <button 
               className={`favorite-detail-button ${isFavorite ? 'favorite-active' : ''}`}
               onClick={handleToggleFavorite}

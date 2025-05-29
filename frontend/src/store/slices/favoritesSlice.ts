@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { FavoritesState, Product } from '../../types';
 
-// Load favorites from localStorage if available
 const loadFavorites = (): Product[] => {
   try {
     const storedFavorites = localStorage.getItem('favorites');
@@ -24,13 +23,11 @@ const favoritesSlice = createSlice({
       const exists = state.items.some(item => item.id === action.payload.id);
       if (!exists) {
         state.items.push(action.payload);
-        // Save to localStorage
         localStorage.setItem('favorites', JSON.stringify(state.items));
       }
     },
     removeFromFavorites: (state, action: PayloadAction<number>) => {
       state.items = state.items.filter(item => item.id !== action.payload);
-      // Update localStorage
       localStorage.setItem('favorites', JSON.stringify(state.items));
     },
   },
