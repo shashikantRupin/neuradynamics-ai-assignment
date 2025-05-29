@@ -32,7 +32,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   }).format(product.price);
 
   return (
-    <Link to={`/product/${product.id}`} className="product-card">
+    <div  className="product-card">
       <div className="product-image-container">
         <img 
           src={product.image} 
@@ -40,13 +40,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           className="product-image" 
           loading="lazy" 
         />
-        <div className="product-actions">
+        <div className="product-actions-card">
           <button 
-            className={`favorite-button ${isFavorite ? 'favorite-active' : ''}`}
+            className={`favorite-button ${isFavorite ? 'favorite-active-btn' : ''}`}
             onClick={toggleFavorite}
             aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
           >
-            <Heart size={20} />
+            <Heart size={25} />
           </button>
         </div>
         <div className="product-category">{product.category}</div>
@@ -66,13 +66,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </div>
       </div>
       
-      <div className="product-card-footer">
+      <Link to={`/product/${product.id}`} className="product-card-footer">
         <button className="view-button">
           <ShoppingCart size={16} />
           <span>View Product</span>
         </button>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

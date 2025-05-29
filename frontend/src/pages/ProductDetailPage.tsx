@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../hooks';
 import { fetchProducts } from '../store/slices/productsSlice';
 import { addToFavorites, removeFromFavorites } from '../store/slices/favoritesSlice';
-import { Heart, ArrowLeft, Star, ShoppingCart, Truck, Shield } from 'lucide-react';
+import { Heart, ArrowLeft, Star, Truck, Shield } from 'lucide-react';
 import './ProductDetailPage.css';
 
 const ProductDetailPage: React.FC = () => {

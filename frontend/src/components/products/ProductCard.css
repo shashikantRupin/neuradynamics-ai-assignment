@@ -7,7 +7,7 @@
   overflow: hidden;
   box-shadow: 0 4px 6px var(--color-shadow);
   transition: transform var(--transition-normal) ease,
-              box-shadow var(--transition-normal) ease;
+    box-shadow var(--transition-normal) ease;
   text-decoration: none;
   color: var(--color-text-primary);
 }
@@ -39,43 +39,41 @@
   transform: scale(1.05);
 }
 
-.product-actions {
+.product-actions-card {
   position: absolute;
-  top: var(--space-15);
-  right: var(--space-3);
-  z-index: 2;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  background: none;
 }
 
 .favorite-button {
-  background-color: white;
+  background-color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-text-secondary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color var(--transition-fast) ease,
-              color var(--transition-fast) ease,
-              transform var(--transition-fast) ease;
+    color var(--transition-fast) ease, transform var(--transition-fast) ease;
+  border: none;
+}
+.favorite-button svg {
+  /* fill: red; */
+  border: no;
 }
 
 .favorite-button:hover {
-  background-color: #fef3c7;
-  color: var(--color-accent-600);
+  color: red;
   transform: scale(1.1);
 }
 
-.favorite-active {
-  background-color: var(--color-accent-200);
-  color: var(--color-accent-600);
-}
 
-.favorite-active svg {
-  fill: var(--color-accent-600);
+
+.favorite-active-btn svg {
+  fill: red;
+  stroke: none;
 }
 
 .product-category {
@@ -152,6 +150,7 @@
   padding: var(--space-3);
   font-weight: 500;
   transition: background-color var(--transition-fast) ease;
+  /* border: 1px solid red; */
 }
 
 .view-button:hover {
