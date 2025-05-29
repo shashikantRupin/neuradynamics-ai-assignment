@@ -1,6 +1,11 @@
+
+
+
 .products-page {
   padding-top: var(--space-6);
+  /* border: 1px solid red; */
 }
+
 
 .products-header {
   margin-bottom: var(--space-6);

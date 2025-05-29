@@ -1,6 +1,8 @@
 .search-bar {
   position: relative;
   width: 100%;
+  /* border: 1px solid red; */
+  margin: 1rem;
 }
 
 .search-icon {

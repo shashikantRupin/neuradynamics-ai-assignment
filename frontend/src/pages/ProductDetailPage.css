@@ -1,6 +1,9 @@
+
+
 .product-detail-page {
   padding-top: var(--space-6);
   padding-bottom: var(--space-12);
+  
 }
 
 .back-link {
@@ -159,13 +162,18 @@
 
 .product-actions {
   display: flex;
-  flex-direction: column;
+  /* border: 1px solid red; */
+  /* flex-direction: column; */
   gap: var(--space-3);
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .product-actions {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
     flex-direction: row;
+    justify-content: center;
   }
 }
 

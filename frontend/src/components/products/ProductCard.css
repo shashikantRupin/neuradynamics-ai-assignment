@@ -41,7 +41,7 @@
 
 .product-actions {
   position: absolute;
-  top: var(--space-3);
+  top: var(--space-15);
   right: var(--space-3);
   z-index: 2;
 }
