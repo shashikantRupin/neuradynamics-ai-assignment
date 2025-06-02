@@ -2,99 +2,55 @@
 
 A modern product dashboard built with React, Redux Toolkit, and custom CSS styling. This application allows users to browse products from the Fake Store API, filter and sort them, view detailed product information, and maintain a list of favorite products.
 
-## Features
+---
 
-- Product listing with responsive grid layout
-- Product search with debounced input
-- Category filtering and price/rating sorting
-- Detailed product pages
-- Favorites management with localStorage persistence
-- Light/dark theme toggle
-- Comprehensive test coverage
+## 🚀 Features
 
-## Tech Stack
+- 🛒 Product listing with responsive grid layout  
+- 🔍 Product search with debounced input  
+- 📂 Category filtering and price/rating sorting  
+- 📄 Detailed product pages  
+- ❤️ Favorites management with localStorage persistence  
+- 🌗 Light/dark theme toggle  
+- ✅ Comprehensive test coverage
 
-- React 18 with TypeScript
-- Redux Toolkit for state management
-- React Router for navigation
-- Custom CSS for styling (no UI libraries)
-- Vitest for testing
-- Lucide React for icons
+---
 
-## Getting Started
+## 🛠 Tech Stack
 
-### Prerequisites
+- ⚛️ React 18 with TypeScript  
+- 📦 Redux Toolkit for state management  
+- 🔁 React Router for navigation  
+- 🎨 Custom CSS for styling (no UI libraries)  
+- 🧪 Vitest for testing  
+- 🧩 Lucide React for icons
 
-- Node.js 18+ and npm
+---
 
-### Installation
+## 📸 Screenshots
 
-1. Clone the repository
-2. Install dependencies:
+### 🖼 Product Listing
+![Product Listing](./ss/img1.png)
 
-```bash
-npm install
-```
+### 📘 Product Detail Page
+![Product Detail](./ss/img2.png)
 
-3. Start the development server:
+### ❤️ Favorites Page
+![Favorites Page](./ss/img3.png)
 
-```bash
-npm run dev
-```
+---
 
-4. Open http://localhost:5173 to view the application in your browser.
+## 🧑‍💻 Getting Started
 
-## Testing
+### 📋 Prerequisites
 
-Run tests with:
+- Node.js 18+  
+- npm (Node Package Manager)
 
-```bash
-npm test
-```
+### 📦 Installation
 
-## Build
-
-To build the application for production:
+1. **Clone the repository**
 
 ```bash
-npm run build
-```
-
-## Project Structure
-
-```
-src/
-├── components/        # Reusable components
-│   ├── filters/       # Search and filter components
-│   ├── layout/        # Layout components (Header, Footer)
-│   └── products/      # Product-related components
-├── hooks/             # Custom hooks
-├── pages/             # Page components
-├── store/             # Redux store setup
-│   └── slices/        # Redux slices
-├── types/             # TypeScript types
-└── __tests__/         # Test files
-```
-
-## Features
-
-### Products Page
-- Displays all products in a responsive grid
-- Allows filtering by category
-- Provides sorting by price and rating
-- Implements debounced search functionality
-
-### Product Detail Page
-- Shows complete product information
-- Displays product image, price, description, and rating
-- Allows adding/removing products from favorites
-
-### Favorites Page
-- Lists all favorited products
-- Provides ability to remove products from favorites
-- Shows empty state when no favorites exist
-
-### Theme Toggle
-- Supports light and dark themes
-- Persists theme preference in localStorage
-- Automatically detects system preference on first visit
+git clone https://github.com/shashikantRupin/neuradynamics-ai-assignment
+cd frontend
